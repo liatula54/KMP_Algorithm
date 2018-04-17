@@ -28,25 +28,6 @@ public class StringSearchingAlgorithm {
 		return lsep;
 	}
 
-	//pattern matching
-	public boolean isSubstring(char[] text,char[] pattern){
-		int i=0 , j =0, k = 0 ;
-		while(i<text.length && j<pattern.length){
-			if(text[i] ==pattern[j]){
-				i++;
-				j++;
-			}
-			else{
-				j=0;
-				k++;
-				i=k;
-			}
-		}
-		if(j == pattern.length){
-			return true;
-		}
-		return false;
-	}
 
 	public boolean KMP(char[] t,char[] p){
 
